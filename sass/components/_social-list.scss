@@ -1,0 +1,50 @@
+.social-list {
+  display: flex;
+}
+
+.team-member__social-list {
+  justify-content: center;
+}
+
+.page-footer__social-list {
+  justify-content: center;
+}
+
+.social-list__item {
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.social-list__link {
+  @include alignmentFlex(flex, center, center);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+
+  color: $icon-primary-color;
+
+  transition: color 250ms $primary-timing-function,
+    background-color 250ms $primary-timing-function;
+
+  &--grey-bg {
+    background-color: $icon-bg-footer;
+    color: $icon-secondary-color;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+    color: $icon-hover-color;
+  }
+}
+
+.social-list__icon {
+  fill: currentColor;
+}
+
+@media screen and (min-width: $desktop-width-container) {
+  .page-footer__social-list {
+    justify-content: flex-start;
+  }
+}

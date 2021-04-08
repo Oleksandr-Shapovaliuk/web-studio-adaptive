@@ -1,0 +1,36 @@
+body {
+  background-color: $bg-primary-color;
+  color: $text-primary-color;
+  font-family: $font-family-primary;
+  font-size: $font-size-main;
+  letter-spacing: $letter-spacing-main;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}

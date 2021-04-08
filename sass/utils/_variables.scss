@@ -1,0 +1,47 @@
+// BACKGROUND-COLOR
+$bg-primary-color: #ffffff;
+$bg-secondary-color: #2f303a;
+$bg-team-color: #f5f4fa;
+// ACCENT
+$accent-color: #2196f3;
+$hover-bg-button: #188ce8;
+// BORDER
+$border-header-footer: 1px solid #ececec;
+$border-distribution-input: 1px solid rgba(255, 255, 255, 0.3);
+$border-order-form-input: 1px solid rgba(33, 33, 33, 0.2);
+$border-clients-link: 1px solid #afb1b8;
+$border-card-meta: 1px solid #eeeeee;
+// GEOMETRY
+$mobile-width-container: 480px;
+$tablet-width-container: 768px;
+$desktop-width-container: 1200px;
+$grid-margin: 30px;
+$mobile-padding-section: 60px;
+$desktop-padding-section: 94px;
+// ANIMATION
+$primary-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+// TEXT
+$font-family-primary: 'Roboto', sans-serif;
+$text-primary-color: #212121;
+$text-secondary-color: #757575;
+$text-white-color: #ffffff;
+$text-color-footer-contact: rgba(255, 255, 255, 0.6);
+$font-size-main: 14px;
+$letter-spacing-main: 0.03em;
+// ICON
+$icon-primary-color: #afb1b8;
+$icon-secondary-color: #ffffff;
+$icon-hover-color: #ffffff;
+$icon-bg-footer: rgba(255, 255, 255, 0.1);
+// LOGO
+$font-family-logo: 'Raleway', sans-serif;
+$color-header-logo: #000000;
+// GRADIENT
+$gradient-hero-bg: linear-gradient(
+  rgba(47, 48, 58, 0.4),
+  rgba(47, 48, 58, 0.4)
+);
+// OVERLAY
+$overlay-about-us: rgba(47, 48, 58, 0.8);
+$overlay-portfolio-card: rgba(33, 150, 243, 0.9);
+$overlay-backdrop: rgba(0, 0, 0, 0.2);

@@ -1,0 +1,25 @@
+.order-form {
+   display: flex;
+   flex-direction: column;
+   padding: 40px;
+}
+
+.order-form__title {
+   display: block;
+   margin-bottom: 12px;
+
+   font-weight: 700;
+   font-size: 20px;
+   line-height: 1.15;
+   text-align: center;
+   letter-spacing: $letter-spacing-main;
+   color: $text-primary-color;
+}
+
+.order-form__form-agree {
+   margin-bottom: 30px;
+}
+
+.order-form__button {
+   align-self: center;
+}

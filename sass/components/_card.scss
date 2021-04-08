@@ -1,0 +1,74 @@
+.card {
+  height: 100%;
+  border: $border-card-meta;
+}
+
+.card__link {
+  display: block;
+  text-decoration: none;
+  color: $text-primary-color;
+
+  transition: box-shadow 250ms $primary-timing-function;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+
+  &:hover .card__overlay,
+  &:focus .card__overlay {
+    transform: translateY(0);
+  }
+}
+
+.card__wrap {
+  position: relative;
+  overflow: hidden;
+}
+
+.card__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: $overlay-portfolio-card;
+
+  transform: translateY(101%);
+  transition: transform 250ms $primary-timing-function;
+}
+
+.card__overlay-text {
+  position: absolute;
+  top: 50%;
+  padding-left: 24px;
+  padding-right: 24px;
+
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: $letter-spacing-main;
+  color: $text-white-color;
+
+  transform: translateY(-50%);
+}
+
+.card__meta {
+  height: 100%;
+  padding: 20px 24px;
+}
+
+.card__title {
+  margin-bottom: 4px;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.card__category {
+  font-size: 16px;
+  line-height: 1.87;
+  color: $text-secondary-color;
+}

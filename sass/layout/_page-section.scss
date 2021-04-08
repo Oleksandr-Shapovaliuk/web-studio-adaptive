@@ -1,0 +1,36 @@
+.page-section {
+  padding-top: $mobile-padding-section;
+  padding-bottom: $mobile-padding-section;
+
+  &--grey-theme {
+    background-color: $bg-team-color;
+  }
+}
+
+.page-section__title {
+  margin-bottom: 30px;
+
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+@media screen and (min-width: $desktop-width-container) {
+  .page-section {
+    padding-top: $desktop-padding-section;
+    padding-bottom: $desktop-padding-section;
+
+    &--cropped-top {
+      padding-top: 0;
+    }
+  }
+
+  .page-section__title {
+    margin-bottom: 50px;
+
+    font-size: 36px;
+    line-height: 1.16;
+  }
+}

@@ -1,0 +1,22 @@
+.address {
+   font-style: normal;
+}
+
+.address__location {
+   margin-bottom: 9px;
+
+   color: $text-white-color;
+   line-height: 1.71;
+}
+
+.address__item {
+
+   &:not(:last-child){
+   margin-bottom: 9px
+   }
+}
+
+.address__link {
+   color: $text-color-footer-contact;
+   line-height: 1.71;
+}

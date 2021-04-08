@@ -1,0 +1,67 @@
+.distribution-form__input {
+  height: 50px;
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: transparent;
+  border: $border-distribution-input;
+  border-radius: 4px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: $letter-spacing-main;
+  color: $text-color-footer-contact;
+
+  &::placeholder {
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: $letter-spacing-main;
+    color: $text-color-footer-contact;
+  }
+
+  &:focus {
+    outline: none;
+    border-color: $accent-color;
+  }
+}
+
+.distribution-form__button {
+  @include alignmentFlex(inline-flex, center, center);
+  overflow: hidden;
+
+  &::after {
+    content: '';
+    display: inline-flex;
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+    background-image: url('../../image/footer/btn-send.svg');
+    background-size: contain;
+  }
+
+  &:hover,
+  &:focus {
+    &::after {
+      animation: amazingSend 1500ms linear;
+    }
+  }
+}
+
+@media screen and (min-width: $tablet-width-container) {
+  .distribution-form__input {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: $desktop-width-container) {
+  .distribution-form__wrapper {
+    display: flex;
+  }
+
+  .distribution-form__input {
+    width: 358px;
+    margin-bottom: 0;
+    margin-right: 12px;
+  }
+}

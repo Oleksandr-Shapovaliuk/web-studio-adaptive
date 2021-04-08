@@ -1,0 +1,60 @@
+.form-agree {
+  @include alignmentFlex(flex, center);
+}
+
+.form-agree__label {
+  &::before {
+    content: '';
+    display: inline-block;
+
+    width: 16px;
+    height: 16px;
+    margin-right: 7px;
+    border: 2px solid $text-primary-color;
+    border-radius: 2px;
+    background-color: transparent;
+
+    transition: border-color 250ms $primary-timing-function,
+      background-color 250ms $primary-timing-function;
+  }
+
+  .form-agree__checkbox:checked + &::before {
+    border-color: $accent-color;
+    background-color: $accent-color;
+    background-image: url('../../image/modal-form/icon-form-check.svg');
+    background-size: contain;
+    background-origin: border-box;
+  }
+
+  .form-agree__checkbox:focus + &::before {
+    outline: 2px solid $accent-color;
+  }
+}
+
+.form-agree__label {
+  @include alignmentFlex(flex, center, center);
+  flex-wrap: wrap;
+
+  font-size: 2.5vw;
+  text-align: center;
+  letter-spacing: $letter-spacing-main;
+  color: $text-secondary-color;
+}
+
+.form-agree__link {
+  color: $accent-color;
+}
+
+@media screen and (min-width: $mobile-width-container) {
+  .form-agree__label {
+    font-size: 12px;
+    line-height: 1.16;
+  }
+}
+
+@media screen and (min-width: $desktop-width-container) {
+  .form-agree__label {
+    font-size: 14px;
+    line-height: 1.71;
+  }
+}

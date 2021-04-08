@@ -1,0 +1,28 @@
+.page-header {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: $border-header-footer;
+}
+
+.page-header__container {
+  display: flex;
+  align-items: center;
+}
+
+.page-header__nav {
+  @include alignmentFlex(flex, flex-start, center);
+}
+
+@media screen and (min-width: $tablet-width-container) {
+  .page-header {
+    padding-top: 21px;
+    padding-bottom: 21px;
+  }
+}
+
+@media screen and (min-width: $tablet-width-container) {
+  .page-header {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+}

@@ -1,0 +1,26 @@
+.about-us__img-wrapper {
+  position: relative;
+}
+
+.about-us__overlay {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  background-color: $overlay-about-us;
+
+  font-weight: 700;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: $letter-spacing-main;
+  text-transform: uppercase;
+  color: $text-white-color;
+}
+
+@media screen and (max-width: $desktop-width-container - 1) {
+  .about-us {
+    display: none;
+  }
+}

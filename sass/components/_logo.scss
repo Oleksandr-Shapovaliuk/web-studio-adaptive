@@ -1,0 +1,27 @@
+.logo {
+  color: $color-header-logo;
+  font-family: $font-family-logo;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
+
+.logo__prefix {
+  color: $accent-color;
+}
+
+.page-footer__logo {
+  color: $text-white-color;
+}
+
+@media screen and (min-width: $tablet-width-container) {
+  .page-header__logo {
+    margin-right: 88px;
+  }
+}
+
+@media screen and (min-width: $desktop-width-container) {
+  .page-header__logo {
+    margin-right: 93px;
+  }
+}

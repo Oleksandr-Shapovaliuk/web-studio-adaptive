@@ -1,0 +1,22 @@
+.clients__link {
+  @include alignmentFlex(flex, center, center);
+  height: 90px;
+  width: 100%;
+  border: $border-clients-link;
+  border-radius: 4px;
+
+  color: $icon-primary-color;
+
+  transition: color 250ms $primary-timing-function,
+    border-color 250ms $primary-timing-function;
+
+  &:hover,
+  &:focus {
+    border-color: $accent-color;
+    color: $accent-color;
+  }
+}
+
+.clients__icon {
+  fill: currentColor;
+}
