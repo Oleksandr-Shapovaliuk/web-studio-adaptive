@@ -9,6 +9,13 @@
   border: none;
   background-color: transparent;
 
+  &:hover,
+  &:focus {
+    .menu-button__icon {
+      fill: $accent-color;
+    }
+  }
+
   &.is-open {
     .menu-button__icon-close {
       opacity: 1;

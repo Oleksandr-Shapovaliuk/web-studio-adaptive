@@ -37,6 +37,7 @@
 
   transform: translateY(101%);
   transition: transform 250ms $primary-timing-function;
+
   overflow: hidden;
 }
 
@@ -72,4 +73,10 @@
   font-size: 16px;
   line-height: 1.87;
   color: $text-secondary-color;
+}
+
+@media screen and (max-width: $mobile-width-container) {
+  .card__overlay-text {
+    font-size: 3.75vw;
+  }
 }

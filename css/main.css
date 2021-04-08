@@ -452,6 +452,10 @@ img {
   background-color: transparent;
 }
 
+.menu-button:hover .menu-button__icon, .menu-button:focus .menu-button__icon {
+  fill: #2196f3;
+}
+
 .menu-button.is-open .menu-button__icon-close {
   opacity: 1;
 }
@@ -996,6 +1000,12 @@ img {
   font-size: 16px;
   line-height: 1.87;
   color: #757575;
+}
+
+@media screen and (max-width: 480px) {
+  .card__overlay-text {
+    font-size: 3.75vw;
+  }
 }
 
 .backdrop {
