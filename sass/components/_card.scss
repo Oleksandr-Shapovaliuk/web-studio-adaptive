@@ -37,6 +37,7 @@
 
   transform: translateY(101%);
   transition: transform 250ms $primary-timing-function;
+  overflow: hidden;
 }
 
 .card__overlay-text {
