@@ -15,7 +15,7 @@
   right: 8px;
   width: 30px;
   height: 30px;
-  @include alignmentFlex(flex, center, center);
+  display: inline-block;
   background-color: $bg-primary-color;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
@@ -29,13 +29,30 @@
 }
 
 .modal__icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
   fill: currentColor;
 }
 
 @media screen and (min-width: $mobile-width-container) {
   .modal {
-    position: absolute;
     width: 450px;
+  }
+}
+
+@media screen and (max-height: 630px) {
+  .modal {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+@media screen and (min-width: $mobile-width-container) and (min-height: 630px) {
+  .modal {
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);

@@ -12,3 +12,4 @@
       document.body.classList.toggle("modal-open");
    });
 })();
+
